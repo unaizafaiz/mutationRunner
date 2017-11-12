@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.mafagafogigante.dungeon.game.DungeonStringTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-09-15T21:14:28" hostname="DESKTOP-QSQGN0U" time="0.003">
-  <properties/>
-  <testcase name="testGetLengthShouldWorkWithDefaultColor" classname="org.mafagafogigante.dungeon.game.DungeonStringTest" time="0.0"/>
-  <testcase name="testGetLengthShouldWorkWithMultipleColors" classname="org.mafagafogigante.dungeon.game.DungeonStringTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
