@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.mafagafogigante.dungeon.world.VisibilityCriteriaTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-09-15T21:14:29" hostname="DESKTOP-QSQGN0U" time="0.005">
+  <properties/>
+  <testcase name="testIsMetByShouldReturnTrueWhenAllCriteriaAreMet" classname="org.mafagafogigante.dungeon.world.VisibilityCriteriaTest" time="0.002"/>
+  <testcase name="testIsMetByShouldReturnFalseWhenThereIsASingleUnmetCriterion" classname="org.mafagafogigante.dungeon.world.VisibilityCriteriaTest" time="0.001"/>
+  <testcase name="testIsMetByShouldReturnTrueWhenThereIsASingleMetCriterion" classname="org.mafagafogigante.dungeon.world.VisibilityCriteriaTest" time="0.0"/>
+  <testcase name="testIsMetByShouldReturnTrueWhenThereAreNoVisibilityCriteria" classname="org.mafagafogigante.dungeon.world.VisibilityCriteriaTest" time="0.0"/>
+  <testcase name="testIsMetByShouldReturnFalseWhenThereIsAtLeastOneUnmetCriterion" classname="org.mafagafogigante.dungeon.world.VisibilityCriteriaTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

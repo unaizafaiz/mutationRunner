@@ -1,0 +1,30 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'org.mafagafogigante.dungeon'
+version = 'v6.2.0'
+
+description = """Dungeon"""
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'com.eclipsesource.minimal-json', name: 'minimal-json', version:'0.9.4'
+    compile group: 'joda-time', name: 'joda-time', version:'2.8.1'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version:'3.4'
+    compile group: 'org.apache.commons', name: 'commons-math3', version:'3.6.1'
+    compile group: 'org.jetbrains', name: 'annotations', version:'13.0'
+    compile group: 'org.hamcrest', name: 'hamcrest-all', version:'1.3'
+    testCompile group: 'junit', name: 'junit', version:'4.11'
+    testCompile group: 'org.mockito', name: 'mockito-all', version:'2.0.2-beta'
+}

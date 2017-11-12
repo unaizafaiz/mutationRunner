@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.mafagafogigante.dungeon.date.DateTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2017-09-15T21:14:28" hostname="DESKTOP-QSQGN0U" time="0.004">
+  <properties/>
+  <testcase name="testGetMonth" classname="org.mafagafogigante.dungeon.date.DateTest" time="0.0"/>
+  <testcase name="testPlusDays" classname="org.mafagafogigante.dungeon.date.DateTest" time="0.0"/>
+  <testcase name="testPlusYears" classname="org.mafagafogigante.dungeon.date.DateTest" time="0.001"/>
+  <testcase name="testCompareTo" classname="org.mafagafogigante.dungeon.date.DateTest" time="0.0"/>
+  <testcase name="testGetYear" classname="org.mafagafogigante.dungeon.date.DateTest" time="0.001"/>
+  <testcase name="testMinusMonths" classname="org.mafagafogigante.dungeon.date.DateTest" time="0.001"/>
+  <testcase name="testPlusMonths" classname="org.mafagafogigante.dungeon.date.DateTest" time="0.0"/>
+  <testcase name="testMinusYears" classname="org.mafagafogigante.dungeon.date.DateTest" time="0.0"/>
+  <testcase name="testGetDay" classname="org.mafagafogigante.dungeon.date.DateTest" time="0.0"/>
+  <testcase name="testMinusDays" classname="org.mafagafogigante.dungeon.date.DateTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

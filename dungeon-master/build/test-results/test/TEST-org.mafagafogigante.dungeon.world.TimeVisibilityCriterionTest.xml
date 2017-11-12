@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.mafagafogigante.dungeon.world.TimeVisibilityCriterionTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-09-15T21:14:29" hostname="DESKTOP-QSQGN0U" time="0.478">
+  <properties/>
+  <testcase name="testIsMetByShouldReturnTrueWhenTheCriterionIsMetEvenForCriteriaThatCrossMidnight" classname="org.mafagafogigante.dungeon.world.TimeVisibilityCriterionTest" time="0.341"/>
+  <testcase name="testIsMetByShouldReturnTrueWhenTheCriterionIsMet" classname="org.mafagafogigante.dungeon.world.TimeVisibilityCriterionTest" time="0.001"/>
+  <testcase name="testIsMetByShouldReturnFalseWhenTheCriterionIsUnmetEvenForCriteriaThatCrossMidnight" classname="org.mafagafogigante.dungeon.world.TimeVisibilityCriterionTest" time="0.13"/>
+  <testcase name="testConstructorDoesNotAllowHoursEqualToTheMaximumHour" classname="org.mafagafogigante.dungeon.world.TimeVisibilityCriterionTest" time="0.001"/>
+  <testcase name="testIsMetByShouldReturnFalseWhenTheCriterionIsUnmet" classname="org.mafagafogigante.dungeon.world.TimeVisibilityCriterionTest" time="0.001"/>
+  <testcase name="testConstructorDoesNotAllowHoursBiggerThanTheMaximumHour" classname="org.mafagafogigante.dungeon.world.TimeVisibilityCriterionTest" time="0.0"/>
+  <testcase name="testConstructorDoesNotAllowEqualStartAndEnd" classname="org.mafagafogigante.dungeon.world.TimeVisibilityCriterionTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

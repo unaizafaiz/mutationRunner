@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.mafagafogigante.dungeon.date.DungeonTimeParserTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-09-15T21:14:28" hostname="DESKTOP-QSQGN0U" time="0.01">
+  <properties/>
+  <testcase name="parsePeriodShouldWorkWithTheJavadocExample" classname="org.mafagafogigante.dungeon.date.DungeonTimeParserTest" time="0.002"/>
+  <testcase name="parsePeriodShouldThrowExceptionOnMalformedInput" classname="org.mafagafogigante.dungeon.date.DungeonTimeParserTest" time="0.0"/>
+  <testcase name="parsePeriodShouldWorkWithPlurals" classname="org.mafagafogigante.dungeon.date.DungeonTimeParserTest" time="0.0"/>
+  <testcase name="parsePeriodShouldThrowExceptionOnInvalidUnits" classname="org.mafagafogigante.dungeon.date.DungeonTimeParserTest" time="0.001"/>
+  <testcase name="parsePeriodShouldThrowExceptionOnEmptyString" classname="org.mafagafogigante.dungeon.date.DungeonTimeParserTest" time="0.003"/>
+  <testcase name="parsePeriodShouldThrowExceptionOnZeroMultipliers" classname="org.mafagafogigante.dungeon.date.DungeonTimeParserTest" time="0.0"/>
+  <testcase name="parsePeriodShouldWorkWithSingulars" classname="org.mafagafogigante.dungeon.date.DungeonTimeParserTest" time="0.001"/>
+  <testcase name="parsePeriodShouldThrowExceptionOnMissingMultipliers" classname="org.mafagafogigante.dungeon.date.DungeonTimeParserTest" time="0.0"/>
+  <testcase name="parsePeriodShouldThrowExceptionOnMissingUnits" classname="org.mafagafogigante.dungeon.date.DungeonTimeParserTest" time="0.001"/>
+  <testcase name="parsePeriodShouldThrowExceptionOnNegativeMultipliers" classname="org.mafagafogigante.dungeon.date.DungeonTimeParserTest" time="0.0"/>
+  <testcase name="parsePeriodShouldWorkWithMultipleUnits" classname="org.mafagafogigante.dungeon.date.DungeonTimeParserTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

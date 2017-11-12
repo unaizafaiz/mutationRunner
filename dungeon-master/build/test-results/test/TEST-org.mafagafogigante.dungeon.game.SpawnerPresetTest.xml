@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.mafagafogigante.dungeon.game.SpawnerPresetTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-09-15T21:14:28" hostname="DESKTOP-QSQGN0U" time="0.001">
+  <properties/>
+  <testcase name="testSpawnerPresetConstructorShouldWorkWhenMinimumIsEqualToMaximum" classname="org.mafagafogigante.dungeon.game.SpawnerPresetTest" time="0.0"/>
+  <testcase name="testSpawnerPresetConstructorShouldWorkWhenMinimumIsLessThanMaximum" classname="org.mafagafogigante.dungeon.game.SpawnerPresetTest" time="0.0"/>
+  <testcase name="testSpawnerPresetConstructorThrowsIllegalArgumentExceptionWhenMinimumIsNegative" classname="org.mafagafogigante.dungeon.game.SpawnerPresetTest" time="0.0"/>
+  <testcase name="testSpawnerPresetConstructorThrowsIllegalArgumentExceptionWhenMinimumIsZero" classname="org.mafagafogigante.dungeon.game.SpawnerPresetTest" time="0.001"/>
+  <testcase name="testSpawnerPresetConstructorThrowsIllegalArgumentExceptionWhenMinimumIsGreaterThanMaximum" classname="org.mafagafogigante.dungeon.game.SpawnerPresetTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
