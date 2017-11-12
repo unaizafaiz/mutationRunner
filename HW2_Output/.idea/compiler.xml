@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="HW2_Output_main" target="1.8" />
+      <module name="HW2_Output_test" target="1.8" />
+      <module name="MySudoku_main" target="1.8" />
+      <module name="MySudoku_test" target="1.8" />
+      <module name="MySudokuOriginalWithTests_main" target="1.8" />
+      <module name="MySudokuOriginalWithTests_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

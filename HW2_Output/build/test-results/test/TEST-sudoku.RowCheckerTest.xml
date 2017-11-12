@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="sudoku.RowCheckerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-12T21:42:57" hostname="Manaswis-MacBook-Pro.local" time="0.019">
+  <properties/>
+  <testcase name="wrongRowExpectsSomeTrue" classname="sudoku.RowCheckerTest" time="0.017"/>
+  <testcase name="correctRowExpectsAllFalse" classname="sudoku.RowCheckerTest" time="0.002"/>
+  <system-out><![CDATA[24		For		column		0		this.sudoku.length		9
+24		For		column		1		this.sudoku.length		9
+24		For		column		2		this.sudoku.length		9
+24		For		column		3		this.sudoku.length		9
+24		For		column		4		this.sudoku.length		9
+24		For		column		5		this.sudoku.length		9
+24		For		column		6		this.sudoku.length		9
+24		For		column		7		this.sudoku.length		9
+24		For		column		8		this.sudoku.length		9
+31		For
+31		For
+24		For		column		0		this.sudoku.length		9
+24		For		column		1		this.sudoku.length		9
+24		For		column		2		this.sudoku.length		9
+24		For		column		3		this.sudoku.length		9
+24		For		column		4		this.sudoku.length		9
+24		For		column		5		this.sudoku.length		9
+24		For		column		6		this.sudoku.length		9
+24		For		column		7		this.sudoku.length		9
+24		For		column		8		this.sudoku.length		9
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

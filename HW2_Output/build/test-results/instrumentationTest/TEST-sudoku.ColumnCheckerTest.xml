@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="sudoku.ColumnCheckerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-12T21:43:18" hostname="Manaswis-MacBook-Pro.local" time="0.009">
+  <properties/>
+  <testcase name="correctColumnExpectsAllFalseInWrongCells" classname="sudoku.ColumnCheckerTest" time="0.006"/>
+  <testcase name="wrongColumnExpectsSomeTrueInWrongCells" classname="sudoku.ColumnCheckerTest" time="0.003"/>
+  <system-out><![CDATA[26		For		row		0		this.sudoku.length		9
+26		For		row		1		this.sudoku.length		9
+26		For		row		2		this.sudoku.length		9
+26		For		row		3		this.sudoku.length		9
+26		For		row		4		this.sudoku.length		9
+26		For		row		5		this.sudoku.length		9
+26		For		row		6		this.sudoku.length		9
+26		For		row		7		this.sudoku.length		9
+26		For		row		8		this.sudoku.length		9
+26		For		row		0		this.sudoku.length		9
+26		For		row		1		this.sudoku.length		9
+26		For		row		2		this.sudoku.length		9
+26		For		row		3		this.sudoku.length		9
+26		For		row		4		this.sudoku.length		9
+26		For		row		5		this.sudoku.length		9
+26		For		row		6		this.sudoku.length		9
+26		For		row		7		this.sudoku.length		9
+47		For		j		0		x.length		9
+47		For		j		1		x.length		9
+47		For		j		2		x.length		9
+47		For		j		3		x.length		9
+47		For		j		4		x.length		9
+47		For		j		5		x.length		9
+47		For		j		6		x.length		9
+47		For		j		7		x.length		9
+47		For		j		8		x.length		9
+26		For		row		8		this.sudoku.length		9
+33		For
+33		For
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
