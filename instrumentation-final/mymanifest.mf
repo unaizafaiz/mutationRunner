@@ -1,0 +1,3 @@
+Boot-Class-Path: javassist.jar
+Premain-Class: instrumentation.SimpleMain
+

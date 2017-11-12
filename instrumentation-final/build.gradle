@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+jar {
+    archiveName = "myAgent.jar"
+    manifest {
+        attributes(
+                'Premain-Class': 'instrumentation.SimpleMain',
+                 //'Can-Redefine-Classes': 'true',
+                // 'Can-Retransform-Classes': 'true',
+                //'Can-Set-Native-Method-Prefix': 'true'
+                'Boot-Class-Path': '/Users/manaswikarra/Projects/instrumentation-final/dependencies/javassist.jar'
+
+        )
+    }
+}
+
+dependencies {
+    compile files('/Users/manaswikarra/Projects/instrumentation-final/dependencies/javassist.jar','/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/lib/tools.jar')
+}

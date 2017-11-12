@@ -1,0 +1,1 @@
+jar cvfm myAgent.jar /Users/manaswikarra/Projects/instrumentation-final/mymanifest.mf /Users/manaswikarra/Projects/instrumentation-final/src/main/java/instrumentation/SimpleMain.java /Users/manaswikarra/Projects/instrumentation-final/src/main/java/instrumentation/SimpleTransformer.java

@@ -1,0 +1,27 @@
+This is premain columnChecker:InsertHidingVarMutation
+creating SimpleTransformTraTransformer sudoku/columnChecker
+Inside Transform Class sudoku/columnChecker
+Getting pool
+Class pool created
+Class Name contains BoxChecker
+Super Class Field sudoku
+Subclass Field column
+Added field sudoku to subclass sudoku.columnChecker
+Super Class Field solvedSudoku
+Subclass Field column
+Added field solvedSudoku to subclass sudoku.columnChecker
+Super Class Field sudokuWrongCells
+Subclass Field column
+Added field sudokuWrongCells to subclass sudoku.columnChecker
+Super Class Field startTime
+Subclass Field column
+Added field startTime to subclass sudoku.columnChecker
+correctColumnExpectsAllFalseInWrongCells(sudoku.ColumnCheckerTest): Expected static field sudoku.columnChecker.sudoku
+wrongColumnExpectsSomeTrueInWrongCells(sudoku.ColumnCheckerTest): Expected static field sudoku.columnChecker.sudoku
+false
+		0		this.startColumnbox		0
+27		For		i		0		this.startRowbox		0
+29		For		j		0		this.startColumnbox		0
+wrongSudokuExpectsSomeTrueInWrongCells(sudoku.BoxCheckerTest): Expected static field sudoku.boxChecker.sudoku
+correctSudokuExpectsAllFalseInWrongCells(sudoku.BoxCheckerTest): Expected static field sudoku.boxChecker.sudoku
+false

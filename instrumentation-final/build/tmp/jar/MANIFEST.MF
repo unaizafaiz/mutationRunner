@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Premain-Class: instrumentation.SimpleMain
+Boot-Class-Path: /Users/manaswikarra/Projects/instrumentation-final/de
+ pendencies/javassist.jar
+
