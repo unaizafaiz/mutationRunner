@@ -1,10 +1,10 @@
-#CS 474: Object Oriented Languages and Environtment HW3
+# CS 474: Object Oriented Languages and Environtment HW3
 
 By Lakshmi Manaswi Karra, Pavan Bharadwaj , Unaiza Faiz
 
 
 
-##Steps To Run The Program
+## Steps To Run The Program
     1. Open instrumentation-final intelliJ project
     
     2. Set arguments for to be passed to main method
@@ -18,56 +18,61 @@ By Lakshmi Manaswi Karra, Pavan Bharadwaj , Unaiza Faiz
     4. Run mutationrunner.Main through intelliJ GUI
 
 
-##Instumentation-final 
+## Instumentation-final 
 
 This project is divided into two modules:
-	
-1. src/main/java
-       Implement javassist instrumentation, contains two packages:
-        i. instrumentation
-        ii. mutations
-       
-    - instrumentation.SimpleMain class
+
+### src/main/java
+    
+This folder contains javassist instrumentation implementation packages:
+- instrumentation 
+  - instrumentation.SimpleMain class
               implements Premain function for javassist launcher
-              
-    - instrumentation.SimpleTransformer class
+
+  - instrumentation.SimpleTransformer class
 		    implements ClassFileTransformer 
-		    
-	- mutations package
-	    Contains classes that implement different mutation operators
+- mutations
+     Contains classes that implement different mutation operators
 	    
-        - Access Modifier Change - AMC 
-	       - ModifyPublicAccessMutation
+     - Access Modifier Change - AMC 
+		
+		* ModifyPublicAccessMutation Class:
 	       		 mutates modifier of method from public to private
-	        
-	       - ModifyProtectedAccessMutation
+	   	* ModifyProtectedAccessMutation Class:
 	       		 mutates fields of superclass from protected to private
 	        
-	    - Java Specific Feature 
-	       - ModifyStaticMutation
-	            JSD - static modifier deletion 
-	              mutates superclass static field to non-static
+	 - Java Specific Feature 
+	   
+	   * ModifyStaticMutation Class:
+	        JSD - static modifier deletion 
+	           - mutates superclass static field to non-static
 	        
-	       - ModifyNonStaticMutation
-	            JSI - static modifier insertion 
-	               mutates superclass non-static field to static
+	   * ModifyNonStaticMutation Class:
+	        JSI - static modifier insertion 
+	            - mutates superclass non-static field to static
 		    
-		- Inheritance
-		    - InsertHidingVarMutation
-		        ISI - Hiding variable insertion
+	- Inheritance
+		
+		* InsertHidingVarMutation Class:
+		    ISI - Hiding variable insertion
 		           mutates subclass inserts variable declaration of fields that are declare in superclass field
 		
 
-2. mutationrunner
-		— contains Main class 
+### mutationrunner
 
-
-##HW2_Output
-This contains ASTParser instrumented project output from HW2
-    
-   - src 
-		contains the entire instrumented source code of HW1 sudoku project
+* public static void main(String arguments) 
 		
-   - test
-		contains jUnit test classes for boxChecker, columnChecker, rowChecker, checker class for sudoku
+* runMutate() 
+		Calls the corresponding mutation using Javassist
+		
+* compareFiles()
+		Compares the output files of different mutations with the output file for no mutation type.
+
+## HW2_Output
+This project contains ASTParser instrumented project output from HW2
+    
+   - src folder contains the entire instrumented source code of HW1 sudoku project
+		
+   - test folder contains jUnit test classes for boxChecker, columnChecker, rowChecker, checker class for sudoku
+
 
