@@ -38,30 +38,28 @@ This project is divided into two modules:
 	    
         - Access Modifier Change - AMC 
 	       - ModifyPublicAccessMutation
-	        mutates modifier of method from public to private
+	       		 mutates modifier of method from public to private
 	        
 	       - ModifyProtectedAccessMutation
-	        mutates fields of superclass from protected to private
+	       		 mutates fields of superclass from protected to private
 	        
 	    - Java Specific Feature 
 	       - ModifyStaticMutation
 	            JSD - static modifier deletion 
-	                mutates superclass static field to non-static
+	              mutates superclass static field to non-static
 	        
 	       - ModifyNonStaticMutation
 	            JSI - static modifier insertion 
-	                mutates superclass non-static field to static
+	               mutates superclass non-static field to static
 		    
 		- Inheritance
 		    - InsertHidingVarMutation
 		        ISI - Hiding variable insertion
-		            mutates subclass inserts variable declaration of fields that are declare in superclass field
+		           mutates subclass inserts variable declaration of fields that are declare in superclass field
 		
 
 2. mutationrunner
-		â€” contains Main class 
-
-Before running on IntelliJ set the program arguments. Steps: 
+		— contains Main class 
 
 
 ##HW2_Output
@@ -69,6 +67,7 @@ This contains ASTParser instrumented project output from HW2
     
    - src 
 		contains the entire instrumented source code of HW1 sudoku project
+		
    - test
 		contains jUnit test classes for boxChecker, columnChecker, rowChecker, checker class for sudoku
 
