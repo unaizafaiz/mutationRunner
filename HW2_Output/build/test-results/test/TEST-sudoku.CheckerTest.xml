@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="sudoku.CheckerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-12T21:42:57" hostname="Manaswis-MacBook-Pro.local" time="0.221">
+<testsuite name="sudoku.CheckerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-13T18:57:54" hostname="Manaswis-MacBook-Pro.local" time="0.373">
   <properties/>
-  <testcase name="correctSudokuExpectsAllFalse" classname="sudoku.CheckerTest" time="0.102"/>
-  <testcase name="wrongSudokuExpectsSomeTrue" classname="sudoku.CheckerTest" time="0.119"/>
+  <testcase name="correctSudokuExpectsAllFalse" classname="sudoku.CheckerTest" time="0.34"/>
+  <testcase name="wrongSudokuExpectsSomeTrue" classname="sudoku.CheckerTest" time="0.033"/>
   <system-out><![CDATA[17		For		row		0
+24		For		column		0		this.sudoku.length		9
+24		For		column		1		this.sudoku.length		9
+24		For		column		2		this.sudoku.length		9
+24		For		column		3		this.sudoku.length		9
+24		For		column		4		this.sudoku.length		9
+24		For		column		5		this.sudoku.length		9
+24		For		column		6		this.sudoku.length		9
+24		For		column		7		this.sudoku.length		9
+24		For		column		8		this.sudoku.length		9
 17		For		row		1
 24		For		column		0		this.sudoku.length		9
 24		For		column		1		this.sudoku.length		9
@@ -14,6 +23,7 @@
 24		For		column		6		this.sudoku.length		9
 24		For		column		7		this.sudoku.length		9
 24		For		column		8		this.sudoku.length		9
+17		For		row		2
 24		For		column		0		this.sudoku.length		9
 24		For		column		1		this.sudoku.length		9
 24		For		column		2		this.sudoku.length		9
@@ -23,7 +33,6 @@
 24		For		column		6		this.sudoku.length		9
 24		For		column		7		this.sudoku.length		9
 24		For		column		8		this.sudoku.length		9
-17		For		row		2
 17		For		row		3
 24		For		column		0		this.sudoku.length		9
 24		For		column		1		this.sudoku.length		9
@@ -35,25 +44,16 @@
 24		For		column		7		this.sudoku.length		9
 24		For		column		8		this.sudoku.length		9
 17		For		row		4
-24		For		column		0		this.sudoku.length		9
-24		For		column		1		this.sudoku.length		9
-24		For		column		2		this.sudoku.length		9
-24		For		column		3		this.sudoku.length		9
-24		For		column		4		this.sudoku.length		9
-24		For		column		5		this.sudoku.length		9
-24		For		column		6		this.sudoku.length		9
-24		For		column		7		this.sudoku.length		9
-24		For		column		8		this.sudoku.length		9
-24		For		column		0		this.sudoku.length		9
-24		For		column		1		this.sudoku.length		9
-24		For		column		2		this.sudoku.length		9
-24		For		column		3		this.sudoku.length		9
-24		For		column		4		this.sudoku.length		9
-24		For		column		5		this.sudoku.length		9
-24		For		column		6		this.sudoku.length		9
-24		For		column		7		this.sudoku.length		9
-24		For		column		8		this.sudoku.length		9
 17		For		row		5
+24		For		column		0		this.sudoku.length		9
+24		For		column		1		this.sudoku.length		9
+24		For		column		2		this.sudoku.length		9
+24		For		column		3		this.sudoku.length		9
+24		For		column		4		this.sudoku.length		9
+24		For		column		5		this.sudoku.length		9
+24		For		column		6		this.sudoku.length		9
+24		For		column		7		this.sudoku.length		9
+24		For		column		8		this.sudoku.length		9
 24		For		column		0		this.sudoku.length		9
 24		For		column		1		this.sudoku.length		9
 24		For		column		2		this.sudoku.length		9
@@ -94,6 +94,7 @@
 24		For		column		7		this.sudoku.length		9
 24		For		column		8		this.sudoku.length		9
 24		For		column		0
+24		For		column		1
 26		For		row		0		this.sudoku.length		9
 26		For		row		1		this.sudoku.length		9
 26		For		row		2		this.sudoku.length		9
@@ -103,7 +104,6 @@
 26		For		row		6		this.sudoku.length		9
 26		For		row		7		this.sudoku.length		9
 26		For		row		8		this.sudoku.length		9
-24		For		column		1
 24		For		column		2
 26		For		row		0		this.sudoku.length		9
 26		For		row		1		this.sudoku.length		9
@@ -116,14 +116,6 @@
 26		For		row		8		this.sudoku.length		9
 24		For		column		3
 26		For		row		0		this.sudoku.length		9
-26		For		row		1		this.sudoku.length		9
-26		For		row		2		this.sudoku.length		9
-26		For		row		3		this.sudoku.length		9
-26		For		row		4		this.sudoku.length		9
-26		For		row		5		this.sudoku.length		9
-26		For		row		6		this.sudoku.length		9
-26		For		row		7		this.sudoku.length		9
-26		For		row		8		this.sudoku.length		9
 26		For		row		0		this.sudoku.length		9
 26		For		row		1		this.sudoku.length		9
 26		For		row		2		this.sudoku.length		9
@@ -134,7 +126,6 @@
 26		For		row		7		this.sudoku.length		9
 26		For		row		8		this.sudoku.length		9
 24		For		column		4
-26		For		row		0		this.sudoku.length		9
 26		For		row		1		this.sudoku.length		9
 26		For		row		2		this.sudoku.length		9
 26		For		row		3		this.sudoku.length		9
@@ -144,7 +135,6 @@
 26		For		row		7		this.sudoku.length		9
 26		For		row		8		this.sudoku.length		9
 24		For		column		5
-24		For		column		6
 26		For		row		0		this.sudoku.length		9
 26		For		row		1		this.sudoku.length		9
 26		For		row		2		this.sudoku.length		9
@@ -154,18 +144,27 @@
 26		For		row		6		this.sudoku.length		9
 26		For		row		7		this.sudoku.length		9
 26		For		row		8		this.sudoku.length		9
+26		For		row		0		this.sudoku.length		9
+26		For		row		1		this.sudoku.length		9
+26		For		row		2		this.sudoku.length		9
+26		For		row		3		this.sudoku.length		9
+26		For		row		4		this.sudoku.length		9
+26		For		row		5		this.sudoku.length		9
+26		For		row		6		this.sudoku.length		9
+26		For		row		7		this.sudoku.length		9
+26		For		row		8		this.sudoku.length		9
+24		For		column		6
 24		For		column		7
 26		For		row		0		this.sudoku.length		9
-26		For		row		1		this.sudoku.length		9
-26		For		row		2		this.sudoku.length		9
-26		For		row		3		this.sudoku.length		9
-26		For		row		4		this.sudoku.length		9
-26		For		row		5		this.sudoku.length		9
-26		For		row		6		this.sudoku.length		9
-26		For		row		7		this.sudoku.length		9
-26		For		row		8		this.sudoku.length		9
 24		For		column		8
-26		For		row		0		this.sudoku.length		9
+26		For		row		1		this.sudoku.length		9
+26		For		row		2		this.sudoku.length		9
+26		For		row		3		this.sudoku.length		9
+26		For		row		4		this.sudoku.length		9
+26		For		row		5		this.sudoku.length		9
+26		For		row		6		this.sudoku.length		9
+26		For		row		7		this.sudoku.length		9
+26		For		row		8		this.sudoku.length		9
 26		For		row		0		this.sudoku.length		9
 26		For		row		1		this.sudoku.length		9
 26		For		row		2		this.sudoku.length		9
@@ -175,6 +174,7 @@
 26		For		row		6		this.sudoku.length		9
 26		For		row		7		this.sudoku.length		9
 26		For		row		8		this.sudoku.length		9
+26		For		row		0		this.sudoku.length		9
 26		For		row		1		this.sudoku.length		9
 26		For		row		2		this.sudoku.length		9
 26		For		row		3		this.sudoku.length		9
@@ -187,18 +187,6 @@
 36		For		col		0
 36		For		col		3
 27		For		i		0		this.startRowbox		0
-27		For		i		0		this.startRowbox		0
-29		For		j		3		this.startColumnbox		3
-29		For		j		4		this.startColumnbox		3
-29		For		j		5		this.startColumnbox		3
-27		For		i		1		this.startRowbox		0
-29		For		j		3		this.startColumnbox		3
-29		For		j		4		this.startColumnbox		3
-29		For		j		5		this.startColumnbox		3
-27		For		i		2		this.startRowbox		0
-29		For		j		3		this.startColumnbox		3
-29		For		j		4		this.startColumnbox		3
-29		For		j		5		this.startColumnbox		3
 29		For		j		0		this.startColumnbox		0
 29		For		j		1		this.startColumnbox		0
 29		For		j		2		this.startColumnbox		0
@@ -211,18 +199,33 @@
 29		For		j		1		this.startColumnbox		0
 29		For		j		2		this.startColumnbox		0
 36		For		col		6
+27		For		i		0		this.startRowbox		0
+29		For		j		3		this.startColumnbox		3
+27		For		i		0		this.startRowbox		0
+29		For		j		6		this.startColumnbox		6
+29		For		j		7		this.startColumnbox		6
+29		For		j		8		this.startColumnbox		6
+27		For		i		1		this.startRowbox		0
+29		For		j		6		this.startColumnbox		6
+29		For		j		7		this.startColumnbox		6
+29		For		j		8		this.startColumnbox		6
+27		For		i		2		this.startRowbox		0
+29		For		j		6		this.startColumnbox		6
+29		For		j		7		this.startColumnbox		6
+29		For		j		8		this.startColumnbox		6
 34		For		row		3
-36		For		col		0
-27		For		i		0		this.startRowbox		0
-29		For		j		6		this.startColumnbox		6
-29		For		j		7		this.startColumnbox		6
-29		For		j		8		this.startColumnbox		6
+29		For		j		4		this.startColumnbox		3
+29		For		j		5		this.startColumnbox		3
 27		For		i		1		this.startRowbox		0
-29		For		j		6		this.startColumnbox		6
-29		For		j		7		this.startColumnbox		6
-29		For		j		8		this.startColumnbox		6
+29		For		j		3		this.startColumnbox		3
+29		For		j		4		this.startColumnbox		3
+29		For		j		5		this.startColumnbox		3
 27		For		i		2		this.startRowbox		0
-29		For		j		6		this.startColumnbox		6
+29		For		j		3		this.startColumnbox		3
+29		For		j		4		this.startColumnbox		3
+29		For		j		5		this.startColumnbox		3
+36		For		col		0
+36		For		col		3
 27		For		i		3		this.startRowbox		3
 29		For		j		0		this.startColumnbox		0
 29		For		j		1		this.startColumnbox		0
@@ -235,62 +238,45 @@
 29		For		j		0		this.startColumnbox		0
 29		For		j		1		this.startColumnbox		0
 29		For		j		2		this.startColumnbox		0
-29		For		j		7		this.startColumnbox		6
-29		For		j		8		this.startColumnbox		6
-36		For		col		3
 36		For		col		6
 27		For		i		3		this.startRowbox		3
 29		For		j		3		this.startColumnbox		3
-29		For		j		4		this.startColumnbox		3
-29		For		j		5		this.startColumnbox		3
-27		For		i		4		this.startRowbox		3
-29		For		j		3		this.startColumnbox		3
-29		For		j		4		this.startColumnbox		3
-29		For		j		5		this.startColumnbox		3
-27		For		i		5		this.startRowbox		3
-29		For		j		3		this.startColumnbox		3
-29		For		j		4		this.startColumnbox		3
-29		For		j		5		this.startColumnbox		3
-27		For		i		3		this.startRowbox		3
-29		For		j		6		this.startColumnbox		6
-29		For		j		7		this.startColumnbox		6
-29		For		j		8		this.startColumnbox		6
-27		For		i		4		this.startRowbox		3
-29		For		j		6		this.startColumnbox		6
-29		For		j		7		this.startColumnbox		6
-29		For		j		8		this.startColumnbox		6
-27		For		i		5		this.startRowbox		3
-29		For		j		6		this.startColumnbox		6
-29		For		j		7		this.startColumnbox		6
-29		For		j		8		this.startColumnbox		6
 34		For		row		6
 36		For		col		0
+29		For		j		4		this.startColumnbox		3
+27		For		i		3		this.startRowbox		3
+29		For		j		6		this.startColumnbox		6
+29		For		j		7		this.startColumnbox		6
+29		For		j		5		this.startColumnbox		3
+27		For		i		4		this.startRowbox		3
+29		For		j		3		this.startColumnbox		3
+29		For		j		8		this.startColumnbox		6
 27		For		i		6		this.startRowbox		6
 29		For		j		0		this.startColumnbox		0
-29		For		j		1		this.startColumnbox		0
-29		For		j		2		this.startColumnbox		0
-27		For		i		7		this.startRowbox		6
-29		For		j		0		this.startColumnbox		0
-29		For		j		1		this.startColumnbox		0
-29		For		j		2		this.startColumnbox		0
-27		For		i		8		this.startRowbox		6
-29		For		j		0		this.startColumnbox		0
-29		For		j		1		this.startColumnbox		0
-29		For		j		2		this.startColumnbox		0
+29		For		j		4		this.startColumnbox		3
+29		For		j		5		this.startColumnbox		3
+27		For		i		5		this.startRowbox		3
+29		For		j		3		this.startColumnbox		3
+29		For		j		4		this.startColumnbox		3
+29		For		j		5		this.startColumnbox		3
 36		For		col		3
+29		For		j		1		this.startColumnbox		0
+29		For		j		2		this.startColumnbox		0
+27		For		i		4		this.startRowbox		3
+27		For		i		7		this.startRowbox		6
+29		For		j		0		this.startColumnbox		0
+29		For		j		6		this.startColumnbox		6
+29		For		j		7		this.startColumnbox		6
+29		For		j		1		this.startColumnbox		0
+29		For		j		2		this.startColumnbox		0
+27		For		i		8		this.startRowbox		6
+29		For		j		0		this.startColumnbox		0
+29		For		j		1		this.startColumnbox		0
+29		For		j		2		this.startColumnbox		0
+36		For		col		6
+29		For		j		8		this.startColumnbox		6
 27		For		i		6		this.startRowbox		6
 29		For		j		3		this.startColumnbox		3
-29		For		j		4		this.startColumnbox		3
-29		For		j		5		this.startColumnbox		3
-27		For		i		7		this.startRowbox		6
-29		For		j		3		this.startColumnbox		3
-29		For		j		4		this.startColumnbox		3
-29		For		j		5		this.startColumnbox		3
-27		For		i		8		this.startRowbox		6
-29		For		j		3		this.startColumnbox		3
-29		For		j		4		this.startColumnbox		3
-29		For		j		5		this.startColumnbox		3
-36		For		col		6
 27		For		i		6		this.startRowbox		6
 29		For		j		6		this.startColumnbox		6
 29		For		j		7		this.startColumnbox		6
@@ -304,7 +290,21 @@
 29		For		j		7		this.startColumnbox		6
 29		For		j		8		this.startColumnbox		6
 46		For		i		0
+27		For		i		5		this.startRowbox		3
+29		For		j		6		this.startColumnbox		6
+29		For		j		7		this.startColumnbox		6
+29		For		j		8		this.startColumnbox		6
 46		For		i		1
+29		For		j		4		this.startColumnbox		3
+29		For		j		5		this.startColumnbox		3
+27		For		i		7		this.startRowbox		6
+29		For		j		3		this.startColumnbox		3
+29		For		j		4		this.startColumnbox		3
+29		For		j		5		this.startColumnbox		3
+27		For		i		8		this.startRowbox		6
+29		For		j		3		this.startColumnbox		3
+29		For		j		4		this.startColumnbox		3
+29		For		j		5		this.startColumnbox		3
 46		For		i		2
 46		For		i		3
 46		For		i		4
@@ -333,15 +333,6 @@
 24		For		column		7		this.sudoku.length		9
 24		For		column		8		this.sudoku.length		9
 17		For		row		2
-24		For		column		0		this.sudoku.length		9
-24		For		column		1		this.sudoku.length		9
-24		For		column		2		this.sudoku.length		9
-24		For		column		3		this.sudoku.length		9
-24		For		column		4		this.sudoku.length		9
-24		For		column		5		this.sudoku.length		9
-24		For		column		6		this.sudoku.length		9
-24		For		column		7		this.sudoku.length		9
-24		For		column		8		this.sudoku.length		9
 17		For		row		3
 24		For		column		0		this.sudoku.length		9
 24		For		column		1		this.sudoku.length		9
@@ -352,7 +343,6 @@
 24		For		column		6		this.sudoku.length		9
 24		For		column		7		this.sudoku.length		9
 24		For		column		8		this.sudoku.length		9
-17		For		row		4
 24		For		column		0		this.sudoku.length		9
 24		For		column		1		this.sudoku.length		9
 24		For		column		2		this.sudoku.length		9
@@ -362,6 +352,7 @@
 24		For		column		6		this.sudoku.length		9
 24		For		column		7		this.sudoku.length		9
 24		For		column		8		this.sudoku.length		9
+17		For		row		4
 17		For		row		5
 24		For		column		0		this.sudoku.length		9
 24		For		column		1		this.sudoku.length		9
@@ -392,9 +383,18 @@
 24		For		column		6		this.sudoku.length		9
 24		For		column		7		this.sudoku.length		9
 24		For		column		8		this.sudoku.length		9
-31		For
-31		For
 17		For		row		8
+24		For		column		0		this.sudoku.length		9
+24		For		column		1		this.sudoku.length		9
+24		For		column		2		this.sudoku.length		9
+24		For		column		3		this.sudoku.length		9
+24		For		column		4		this.sudoku.length		9
+24		For		column		5		this.sudoku.length		9
+24		For		column		6		this.sudoku.length		9
+24		For		column		7		this.sudoku.length		9
+24		For		column		8		this.sudoku.length		9
+31		For
+31		For
 24		For		column		0		this.sudoku.length		9
 24		For		column		1		this.sudoku.length		9
 24		For		column		2		this.sudoku.length		9
@@ -419,6 +419,16 @@
 26		For		row		0		this.sudoku.length		9
 26		For		row		1		this.sudoku.length		9
 26		For		row		2		this.sudoku.length		9
+26		For		row		0		this.sudoku.length		9
+26		For		row		1		this.sudoku.length		9
+26		For		row		2		this.sudoku.length		9
+26		For		row		3		this.sudoku.length		9
+26		For		row		4		this.sudoku.length		9
+26		For		row		5		this.sudoku.length		9
+26		For		row		6		this.sudoku.length		9
+26		For		row		7		this.sudoku.length		9
+26		For		row		8		this.sudoku.length		9
+24		For		column		3
 26		For		row		3		this.sudoku.length		9
 26		For		row		4		this.sudoku.length		9
 26		For		row		5		this.sudoku.length		9
@@ -436,20 +446,7 @@
 47		For		j		8		x.length		9
 33		For
 33		For
-26		For		row		0		this.sudoku.length		9
-26		For		row		1		this.sudoku.length		9
-26		For		row		2		this.sudoku.length		9
-26		For		row		3		this.sudoku.length		9
-26		For		row		4		this.sudoku.length		9
-26		For		row		5		this.sudoku.length		9
-26		For		row		6		this.sudoku.length		9
-26		For		row		7		this.sudoku.length		9
-26		For		row		8		this.sudoku.length		9
-24		For		column		3
 24		For		column		4
-26		For		row		0		this.sudoku.length		9
-26		For		row		1		this.sudoku.length		9
-26		For		row		2		this.sudoku.length		9
 26		For		row		0		this.sudoku.length		9
 26		For		row		1		this.sudoku.length		9
 26		For		row		2		this.sudoku.length		9
@@ -460,6 +457,11 @@
 26		For		row		7		this.sudoku.length		9
 26		For		row		8		this.sudoku.length		9
 24		For		column		5
+26		For		row		0		this.sudoku.length		9
+26		For		row		1		this.sudoku.length		9
+26		For		row		0		this.sudoku.length		9
+26		For		row		1		this.sudoku.length		9
+26		For		row		2		this.sudoku.length		9
 26		For		row		3		this.sudoku.length		9
 26		For		row		4		this.sudoku.length		9
 26		For		row		5		this.sudoku.length		9
@@ -467,8 +469,6 @@
 26		For		row		7		this.sudoku.length		9
 26		For		row		8		this.sudoku.length		9
 24		For		column		6
-26		For		row		0		this.sudoku.length		9
-26		For		row		1		this.sudoku.length		9
 26		For		row		2		this.sudoku.length		9
 26		For		row		3		this.sudoku.length		9
 26		For		row		4		this.sudoku.length		9
@@ -486,27 +486,23 @@
 26		For		row		7		this.sudoku.length		9
 26		For		row		8		this.sudoku.length		9
 24		For		column		7
-26		For		row		0		this.sudoku.length		9
-26		For		row		1		this.sudoku.length		9
-26		For		row		2		this.sudoku.length		9
-26		For		row		3		this.sudoku.length		9
-26		For		row		4		this.sudoku.length		9
-26		For		row		5		this.sudoku.length		9
-26		For		row		6		this.sudoku.length		9
-26		For		row		7		this.sudoku.length		9
-26		For		row		8		this.sudoku.length		9
 24		For		column		8
 26		For		row		0		this.sudoku.length		9
 26		For		row		1		this.sudoku.length		9
 26		For		row		2		this.sudoku.length		9
+34		For		row		0
+36		For		col		0
 26		For		row		3		this.sudoku.length		9
 26		For		row		4		this.sudoku.length		9
 26		For		row		5		this.sudoku.length		9
 26		For		row		6		this.sudoku.length		9
 26		For		row		7		this.sudoku.length		9
 26		For		row		8		this.sudoku.length		9
-34		For		row		0
-36		For		col		0
+26		For		row		0		this.sudoku.length		9
+26		For		row		1		this.sudoku.length		9
+26		For		row		2		this.sudoku.length		9
+26		For		row		3		this.sudoku.length		9
+26		For		row		4		this.sudoku.length		9
 27		For		i		0		this.startRowbox		0
 29		For		j		0		this.startColumnbox		0
 29		For		j		1		this.startColumnbox		0
@@ -517,9 +513,13 @@
 29		For		j		2		this.startColumnbox		0
 27		For		i		2		this.startRowbox		0
 29		For		j		0		this.startColumnbox		0
+26		For		row		5		this.sudoku.length		9
+26		For		row		6		this.sudoku.length		9
+26		For		row		7		this.sudoku.length		9
+26		For		row		8		this.sudoku.length		9
+36		For		col		3
 29		For		j		1		this.startColumnbox		0
 29		For		j		2		this.startColumnbox		0
-36		For		col		3
 27		For		i		0		this.startRowbox		0
 29		For		j		3		this.startColumnbox		3
 29		For		j		4		this.startColumnbox		3
@@ -533,47 +533,48 @@
 29		For		j		4		this.startColumnbox		3
 29		For		j		5		this.startColumnbox		3
 36		For		col		6
-27		For		i		0		this.startRowbox		0
 34		For		row		3
-29		For		j		6		this.startColumnbox		6
 36		For		col		0
+27		For		i		0		this.startRowbox		0
+29		For		j		6		this.startColumnbox		6
 29		For		j		7		this.startColumnbox		6
 29		For		j		8		this.startColumnbox		6
 27		For		i		1		this.startRowbox		0
 29		For		j		6		this.startColumnbox		6
+27		For		i		3		this.startRowbox		3
+29		For		j		0		this.startColumnbox		0
+29		For		j		1		this.startColumnbox		0
+29		For		j		2		this.startColumnbox		0
+27		For		i		4		this.startRowbox		3
+29		For		j		0		this.startColumnbox		0
+29		For		j		1		this.startColumnbox		0
+29		For		j		2		this.startColumnbox		0
+27		For		i		5		this.startRowbox		3
+29		For		j		0		this.startColumnbox		0
+29		For		j		1		this.startColumnbox		0
+29		For		j		2		this.startColumnbox		0
+36		For		col		3
 29		For		j		7		this.startColumnbox		6
 29		For		j		8		this.startColumnbox		6
 27		For		i		2		this.startRowbox		0
 29		For		j		6		this.startColumnbox		6
 29		For		j		7		this.startColumnbox		6
 29		For		j		8		this.startColumnbox		6
-36		For		col		3
-27		For		i		3		this.startRowbox		3
-29		For		j		0		this.startColumnbox		0
-29		For		j		1		this.startColumnbox		0
-27		For		i		3		this.startRowbox		3
-29		For		j		3		this.startColumnbox		3
-29		For		j		4		this.startColumnbox		3
-29		For		j		5		this.startColumnbox		3
-27		For		i		4		this.startRowbox		3
-29		For		j		3		this.startColumnbox		3
-29		For		j		2		this.startColumnbox		0
-29		For		j		4		this.startColumnbox		3
-27		For		i		4		this.startRowbox		3
-29		For		j		0		this.startColumnbox		0
-29		For		j		5		this.startColumnbox		3
-27		For		i		5		this.startRowbox		3
-29		For		j		3		this.startColumnbox		3
-29		For		j		4		this.startColumnbox		3
-29		For		j		5		this.startColumnbox		3
-29		For		j		1		this.startColumnbox		0
-29		For		j		2		this.startColumnbox		0
-27		For		i		5		this.startRowbox		3
-29		For		j		0		this.startColumnbox		0
-29		For		j		1		this.startColumnbox		0
-29		For		j		2		this.startColumnbox		0
 36		For		col		6
+27		For		i		3		this.startRowbox		3
+29		For		j		3		this.startColumnbox		3
+29		For		j		4		this.startColumnbox		3
+29		For		j		5		this.startColumnbox		3
+27		For		i		4		this.startRowbox		3
+29		For		j		3		this.startColumnbox		3
+29		For		j		4		this.startColumnbox		3
+29		For		j		5		this.startColumnbox		3
+27		For		i		5		this.startRowbox		3
+29		For		j		3		this.startColumnbox		3
+29		For		j		4		this.startColumnbox		3
+29		For		j		5		this.startColumnbox		3
 34		For		row		6
+36		For		col		0
 27		For		i		3		this.startRowbox		3
 29		For		j		6		this.startColumnbox		6
 29		For		j		7		this.startColumnbox		6
@@ -586,47 +587,46 @@
 29		For		j		6		this.startColumnbox		6
 29		For		j		7		this.startColumnbox		6
 29		For		j		8		this.startColumnbox		6
-36		For		col		0
 36		For		col		3
 27		For		i		6		this.startRowbox		6
-29		For		j		0		this.startColumnbox		0
-29		For		j		1		this.startColumnbox		0
-29		For		j		2		this.startColumnbox		0
-27		For		i		7		this.startRowbox		6
-29		For		j		0		this.startColumnbox		0
-29		For		j		1		this.startColumnbox		0
-29		For		j		2		this.startColumnbox		0
-27		For		i		8		this.startRowbox		6
-29		For		j		0		this.startColumnbox		0
-29		For		j		1		this.startColumnbox		0
-29		For		j		2		this.startColumnbox		0
 36		For		col		6
+29		For		j		0		this.startColumnbox		0
 27		For		i		6		this.startRowbox		6
 29		For		j		3		this.startColumnbox		3
-27		For		i		6		this.startRowbox		6
-29		For		j		6		this.startColumnbox		6
+29		For		j		1		this.startColumnbox		0
+29		For		j		2		this.startColumnbox		0
 29		For		j		4		this.startColumnbox		3
-29		For		j		7		this.startColumnbox		6
-29		For		j		8		this.startColumnbox		6
+29		For		j		5		this.startColumnbox		3
 27		For		i		7		this.startRowbox		6
-29		For		j		6		this.startColumnbox		6
-29		For		j		7		this.startColumnbox		6
-29		For		j		8		this.startColumnbox		6
+29		For		j		3		this.startColumnbox		3
+29		For		j		4		this.startColumnbox		3
+29		For		j		5		this.startColumnbox		3
 27		For		i		8		this.startRowbox		6
-29		For		j		6		this.startColumnbox		6
-29		For		j		7		this.startColumnbox		6
-29		For		j		8		this.startColumnbox		6
+29		For		j		3		this.startColumnbox		3
+29		For		j		4		this.startColumnbox		3
+29		For		j		5		this.startColumnbox		3
 46		For		i		0
-29		For		j		5		this.startColumnbox		3
 27		For		i		7		this.startRowbox		6
-29		For		j		3		this.startColumnbox		3
-29		For		j		4		this.startColumnbox		3
-29		For		j		5		this.startColumnbox		3
+29		For		j		0		this.startColumnbox		0
+27		For		i		6		this.startRowbox		6
+29		For		j		6		this.startColumnbox		6
+29		For		j		1		this.startColumnbox		0
+29		For		j		2		this.startColumnbox		0
 27		For		i		8		this.startRowbox		6
-29		For		j		3		this.startColumnbox		3
-29		For		j		4		this.startColumnbox		3
-29		For		j		5		this.startColumnbox		3
+29		For		j		0		this.startColumnbox		0
+29		For		j		1		this.startColumnbox		0
+29		For		j		2		this.startColumnbox		0
 46		For		i		1
+29		For		j		7		this.startColumnbox		6
+29		For		j		8		this.startColumnbox		6
+27		For		i		7		this.startRowbox		6
+29		For		j		6		this.startColumnbox		6
+29		For		j		7		this.startColumnbox		6
+29		For		j		8		this.startColumnbox		6
+27		For		i		8		this.startRowbox		6
+29		For		j		6		this.startColumnbox		6
+29		For		j		7		this.startColumnbox		6
+29		For		j		8		this.startColumnbox		6
 46		For		i		2
 46		For		i		3
 46		For		i		4

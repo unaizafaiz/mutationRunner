@@ -1,19 +1,58 @@
 apply plugin: 'java'
 
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java/','mutationrunner/src/']
+        }
+        resources {
+            srcDirs = ['src/main/java', 'mutationrunner/src/']
+        }
+    }
+    test {
+        java {
+            srcDirs = ['test/']
+        }
+        resources {
+            srcDirs = ['test/']
+        }
+    }
+}
+
 jar {
-    archiveName = "myAgent.jar"
+    from(sourceSets.main.output) {
+        include "instrumentation/**","mutations/**"
+    }
+    archiveName = "mutations.jar"
     manifest {
         attributes(
                 'Premain-Class': 'instrumentation.SimpleMain',
-                 //'Can-Redefine-Classes': 'true',
-                // 'Can-Retransform-Classes': 'true',
-                //'Can-Set-Native-Method-Prefix': 'true'
-                'Boot-Class-Path': '/Users/manaswikarra/Projects/instrumentation-final/dependencies/javassist.jar'
-
+                'Boot-Class-Path': 'javassist.jar'
         )
     }
 }
 
+task mainJar(type: Jar) {
+    from(sourceSets.main.output) {
+        include "mutationrunner/**"
+    }
+    archiveName = "mutationrunner.jar"
+    manifest {
+        attributes(
+                'Main-Class': 'mutationrunner.Main'
+        )
+    }
+}
+
+
 dependencies {
     compile files('/Users/manaswikarra/Projects/instrumentation-final/dependencies/javassist.jar','/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/lib/tools.jar')
+}
+
+task dist(type: Copy) {
+    from(jar.outputs)
+    from(mainJar.outputs)
+    from(configurations.runtime)
+    from('src/main/dist')
+    into 'build/dist'
 }

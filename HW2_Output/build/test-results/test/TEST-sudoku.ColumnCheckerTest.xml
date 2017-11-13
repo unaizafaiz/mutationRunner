@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="sudoku.ColumnCheckerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-12T21:42:57" hostname="Manaswis-MacBook-Pro.local" time="0.024">
+<testsuite name="sudoku.ColumnCheckerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-13T18:57:54" hostname="Manaswis-MacBook-Pro.local" time="0.085">
   <properties/>
-  <testcase name="correctColumnExpectsAllFalseInWrongCells" classname="sudoku.ColumnCheckerTest" time="0.004"/>
-  <testcase name="wrongColumnExpectsSomeTrueInWrongCells" classname="sudoku.ColumnCheckerTest" time="0.019"/>
+  <testcase name="correctColumnExpectsAllFalseInWrongCells" classname="sudoku.ColumnCheckerTest" time="0.046"/>
+  <testcase name="wrongColumnExpectsSomeTrueInWrongCells" classname="sudoku.ColumnCheckerTest" time="0.038"/>
   <system-out><![CDATA[26		For		row		0		this.sudoku.length		9
 26		For		row		1		this.sudoku.length		9
 26		For		row		2		this.sudoku.length		9

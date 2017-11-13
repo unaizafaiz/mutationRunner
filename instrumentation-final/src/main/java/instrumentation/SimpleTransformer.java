@@ -1,9 +1,7 @@
 package instrumentation;
 
 import javassist.*;
-import mutations.InsertHidingVarMutation;
-import mutations.ModifyAccessMutation;
-import mutations.ModifyStaticMutation;
+import mutations.*;
 
 import java.lang.instrument.ClassFileTransformer;
 import java.lang.instrument.IllegalClassFormatException;
@@ -33,15 +31,22 @@ public class SimpleTransformer implements ClassFileTransformer {
     private byte[] transformClass(String className, byte[] b) {
         try {
             ClassPool pool = ClassPool.getDefault();
-            System.out.println("Getting pool");
             CtClass cl = null;
             try {
                 cl = pool.makeClass(new java.io.ByteArrayInputStream(b));
-                if (mutation.equals("ModifyAccessMutation")) {
-                    ModifyAccessMutation mutation = new ModifyAccessMutation(cl);
+                if (mutation.equals("ModifyPublicAccessMutation")) {
+                    ModifyPublicAccessMutation mutation = new ModifyPublicAccessMutation(cl);
                     mutation.mutate();
+                } else if (mutation.equals("ModifyProtectedAccessMutation")) {
+                    ModifyProtectedAccessMutation mutation = new ModifyProtectedAccessMutation(cl);
+                    mutation.mutate();
+                    return  cl.getSuperclass().toBytecode();
                 } else if (mutation.equals("ModifyStaticMutation")) {
                     ModifyStaticMutation staticMutation = new ModifyStaticMutation(cl);
+                    staticMutation.mutate();
+                    return cl.getSuperclass().toBytecode();
+                } else if (mutation.equals("ModifyNonStaticMutation")) {
+                    ModifyNonStaticMutation staticMutation = new ModifyNonStaticMutation(cl);
                     staticMutation.mutate();
                 } else if (mutation.equals("InsertHidingVarMutation")) {
                     InsertHidingVarMutation insertMutation = new InsertHidingVarMutation(cl);

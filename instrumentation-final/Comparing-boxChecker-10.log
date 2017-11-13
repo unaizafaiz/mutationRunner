@@ -1,0 +1,27 @@
+Comparing Files without and with mutation for Class: boxChecker
+1,25d0
+< 27		For		i		0		this.startRowbox		0
+< 29		For		j		0		this.startColumnbox		0
+< 29		For		j		1		this.startColumnbox		0
+< 29		For		j		2		this.startColumnbox		0
+< 27		For		i		1		this.startRowbox		0
+< 29		For		j		0		this.startColumnbox		0
+< 29		For		j		1		this.startColumnbox		0
+< 29		For		j		2		this.startColumnbox		0
+< 27		For		i		2		this.startRowbox		0
+< 29		For		j		0		this.startColumnbox		0
+< 29		For		j		1		this.startColumnbox		0
+< 29		For		j		2		this.startColumnbox		0
+< 27		For		i		0		this.startRowbox		0
+< 29		For		j		0		this.startColumnbox		0
+< 29		For		j		1		this.startColumnbox		0
+< 29		For		j		2		this.startColumnbox		0
+< 27		For		i		1		this.startRowbox		0
+< 29		For		j		0		this.startColumnbox		0
+< 29		For		j		1		this.startColumnbox		0
+< 29		For		j		2		this.startColumnbox		0
+< 27		For		i		2		this.startRowbox		0
+< 29		For		j		0		this.startColumnbox		0
+< 29		For		j		1		this.startColumnbox		0
+< 29		For		j		2		this.startColumnbox		0
+< true

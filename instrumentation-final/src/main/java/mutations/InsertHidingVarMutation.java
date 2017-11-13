@@ -6,6 +6,12 @@ import javassist.CtClass;
 import javassist.CtField;
 import javassist.NotFoundException;
 
+/*
+ * Class implements Inheritance Level Mutation
+ * IHI – Hiding variable insertion
+ *
+ */
+
 public class InsertHidingVarMutation {
     CtClass cl;
 
@@ -29,7 +35,6 @@ public class InsertHidingVarMutation {
                 if(!hasField){
                     CtField newField = new CtField(superCF.getType(), superCF.getName(),cl);
                     cl.addField(newField);
-                    System.out.println("Added field "+superCF.getName()+" to subclass "+cl.getName());
                 }
             }
         } catch (NotFoundException e) {
