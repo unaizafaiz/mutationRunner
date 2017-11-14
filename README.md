@@ -34,14 +34,14 @@ This project is divided into two modules:
 
 This folder contains javassist instrumentation implementation packages:
 
-- instrumentation
+- instrumentation package:
 	- instrumentation.SimpleMain class
 		implements Premain function for javassist launcher
 
-- instrumentation.SimpleTransformer class
-implements ClassFileTransformer
+	- instrumentation.SimpleTransformer class
+		implements ClassFileTransformer
 
-- mutations
+- mutations package:
 Contains classes that implement different mutation operators
 
 - Access Modifier Change - AMC
@@ -55,28 +55,28 @@ Contains classes that implement different mutation operators
 - Java Specific Feature
 
 	* ModifyStaticMutation Class:
-	JSD - static modifier deletion
-	- mutates superclass static field to non-static
+	JSD - static modifier deletion -
+    mutates superclass static field to non-static
 
 	* ModifyNonStaticMutation Class:
-	JSI - static modifier insertion
-	- mutates superclass non-static field to static
+	JSI - static modifier insertion -
+	 mutates superclass non-static field to static
 
 - Inheritance
 
 	* InsertHidingVarMutation Class:
-	IHI - Hiding variable insertion
-	- mutates subclass inserts variable declaration of fields that are declare in superclass field
+	IHI - Hiding variable insertion -
+	 mutates subclass inserts variable declaration of fields that are declare in superclass field
 
 	* DeletingOverridingMethodMutation Class:
-	IOD - Overridding Method Deleting
-	- Implements Mutation Operator to delete a method that is overriding a superclass method
+	IOD - Overridding Method Deleting -
+	 Implements Mutation Operator to delete a method that is overriding a superclass method
 
 - Polymorphism
 
 	* DeletingOverloadingMethodMutation Class:
-	OMD - Overloading Method Deleting
-	- Implements Mutation Operator to delete a method that is overloaded
+	OMD - Overloading Method Deleting -
+	 Implements Mutation Operator to delete a method that is overloaded
 
 
 ### mutationrunner
