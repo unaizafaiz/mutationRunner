@@ -33,48 +33,50 @@ This project is divided into two modules:
 ### src/main/java
 
 This folder contains javassist instrumentation implementation packages:
-- instrumentation
-- instrumentation.SimpleMain class
-implements Premain function for javassist launcher
 
-- instrumentation.SimpleTransformer class
-implements ClassFileTransformer
-- mutations
+- instrumentation package:
+	- instrumentation.SimpleMain class
+		implements Premain function for javassist launcher
+
+	- instrumentation.SimpleTransformer class
+		implements ClassFileTransformer
+
+- mutations package:
 Contains classes that implement different mutation operators
 
 - Access Modifier Change - AMC
 
-* ModifyPublicAccessMutation Class:
-mutates modifier of method from public to private
+	* ModifyPublicAccessMutation Class:
+	mutates modifier of method from public to private
 
-* ModifyProtectedAccessMutation Class:
-mutates fields of superclass from protected to private
+	* ModifyProtectedAccessMutation Class:
+	mutates fields of superclass from protected to private
 
 - Java Specific Feature
 
-* ModifyStaticMutation Class:
-JSD - static modifier deletion
-- mutates superclass static field to non-static
+	* ModifyStaticMutation Class:
+	JSD - static modifier deletion -
+    mutates superclass static field to non-static
 
-* ModifyNonStaticMutation Class:
-JSI - static modifier insertion
-- mutates superclass non-static field to static
+	* ModifyNonStaticMutation Class:
+	JSI - static modifier insertion -
+	 mutates superclass non-static field to static
 
 - Inheritance
 
-* InsertHidingVarMutation Class:
-IHI - Hiding variable insertion
-mutates subclass inserts variable declaration of fields that are declare in superclass field
+	* InsertHidingVarMutation Class:
+	IHI - Hiding variable insertion -
+	 mutates subclass inserts variable declaration of fields that are declare in superclass field
 
-* DeletingOverridingMethodMutation Class:
-IOD - Overridding Method Deleting
-Implements Mutation Operator to delete a method that is overriding a superclass method
+	* DeletingOverridingMethodMutation Class:
+	IOD - Overridding Method Deleting -
+	 Implements Mutation Operator to delete a method that is overriding a superclass method
 
 - Polymorphism
 
-* DeletingOverloadingMethodMutation Class:
-OMD - Overloading Method Deleting
-Implements Mutation Operator to delete a method that is overloaded
+	* DeletingOverloadingMethodMutation Class:
+	OMD - Overloading Method Deleting -
+	 Implements Mutation Operator to delete a method that is overloaded
 
 
 ### mutationrunner
@@ -82,12 +84,12 @@ Implements Mutation Operator to delete a method that is overloaded
 * public static void main(String arguments)
 
 * runMutation(ArrayList<String> command, String classToMutate, String mutation, String testToRun, int finalIndex, boolean runMutate)
-- Calls the mutation for the specified class and specific mutation if runMutate is true
-- Writes the output of the tests (the Trace) into files (with names corresponding to mutation-testToRun-classtoMutate)
+	- Calls the mutation for the specified class and specific mutation if runMutate is true
+	- Writes the output of the tests (the Trace) into files (with names corresponding to mutation-testToRun-classtoMutate)
 
 * compareFiles(String noMutationOutput, String mutationOutput, int fileIndex, String classtoTest)
-- Compares the trace files of different mutations with the trace file without the mutation of code.
-- NOTE: Creates an empty file when both the trace files have the same output.
+	- Compares the trace files of different mutations with the trace file without the mutation of code.
+	- NOTE: Creates an empty file when both the trace files have the same output.
 
 ## HW2_Output
 This project contains ASTParser instrumented project output from HW2
