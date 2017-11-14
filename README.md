@@ -77,6 +77,10 @@ Contains classes that implement different mutation operators
 	* DeletingOverloadingMethodMutation Class:
 	OMD - Overloading Method Deleting -
 	 Implements Mutation Operator to delete a method that is overloaded
+	 
+	 * TypeCastChangeMutation Class:
+	PCC - type cast chage -
+	 Implements Mutation Operator to cast type of a subclass field to its corresponding superclass type
 
 
 ### mutationrunner
