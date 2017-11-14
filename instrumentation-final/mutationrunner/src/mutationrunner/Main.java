@@ -101,8 +101,10 @@ public class Main {
             String[] temp = noMutateFile.split("-");
             String classtoTest = temp[2];
             for(String mutateFile:mutationFileList){
+                String[] temp2 = mutateFile.split("-");
+                String mutationType = temp2[3];
                 if(mutateFile.contains(classtoTest)){
-                    compareFiles(noMutateFile, mutateFile, fileIndex++, classtoTest);
+                    compareFiles(noMutateFile, mutateFile, fileIndex++, classtoTest, mutationType);
 
                 }
             }
@@ -110,7 +112,7 @@ public class Main {
 
 }
 
-    private static void compareFiles(String noMutationOutput, String mutationOutput, int fileIndex, String classtoTest) throws IOException, InterruptedException {
+    private static void compareFiles(String noMutationOutput, String mutationOutput, int fileIndex, String classtoTest, String mutationType) throws IOException, InterruptedException {
 
         ArrayList<String> command = new ArrayList<>();
         command.add("diff");
@@ -119,7 +121,7 @@ public class Main {
         ProcessBuilder pb = new ProcessBuilder(command);
         File file = new File("Comparing" + "-" + classtoTest + "-" + fileIndex + ".log");
         PrintWriter pw = new PrintWriter(new FileWriter(file));
-        pw.println("Comparing Files without and with mutation for Class: "+classtoTest);
+        pw.println("Comparing Traces for Class: "+classtoTest+" and Mutation: "+mutationType);
         pw.close();
         pb.redirectOutput(ProcessBuilder.Redirect.appendTo(file));
         Process process = pb.start();

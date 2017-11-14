@@ -21,9 +21,9 @@ public class ModifyNonStaticMutation {
 
     public void mutate() {
         for(CtField ctField: cl.getDeclaredFields()){
-            //JSI
             if(!Modifier.isStatic(ctField.getModifiers())){
                 ctField.setModifiers(ctField.getModifiers() | AccessFlag.STATIC);
+                System.out.println(ctField.getName()+" changed to static");
             }
         }
     }

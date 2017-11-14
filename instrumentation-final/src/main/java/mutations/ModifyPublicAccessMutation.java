@@ -24,7 +24,6 @@ public class ModifyPublicAccessMutation {
         for (int i = 0; i < methods.length; i++) {
             if (methods[i].isEmpty() == false) {
                 changeMethod(methods[i]);
-                //changeModifier(methods[i]);
             }
         }
 
@@ -34,11 +33,6 @@ public class ModifyPublicAccessMutation {
         int modifiers = method.getModifiers();
         if((modifiers & AccessFlag.PUBLIC) == AccessFlag.PUBLIC){
             method.setModifiers((modifiers & ~AccessFlag.PUBLIC) | AccessFlag.PRIVATE);
-        } /*else if ((modifiers & AccessFlag.PRIVATE) == AccessFlag.PRIVATE)
-            System.out.println("Method "+method.getName()+" is Private");
-        else if ((modifiers & AccessFlag.PROTECTED) == AccessFlag.PROTECTED)
-            System.out.println("Method "+method.getName()+" is Protected");
-        else
-            System.out.println("Method "+method.getName()+" is Default");*/
+        }
     }
 }

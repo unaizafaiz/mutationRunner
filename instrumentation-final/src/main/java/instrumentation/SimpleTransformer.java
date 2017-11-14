@@ -57,6 +57,9 @@ public class SimpleTransformer implements ClassFileTransformer {
                 } else if (mutation.equals("DeletingOverloadingMethodMutation")) {
                     DeletingOverloadingMethodMutation deleteOverload = new DeletingOverloadingMethodMutation(cl);
                     deleteOverload.mutate();
+                } else if (mutation.equals("TypeCastChangeMutation")) {
+                    TypeCastChangeMutation typeCastChange = new TypeCastChangeMutation(cl);
+                    typeCastChange.mutate();
                 }
                 b = cl.toBytecode();
             } catch (Exception e) {

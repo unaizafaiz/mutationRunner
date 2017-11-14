@@ -25,14 +25,12 @@ public class ModifyProtectedAccessMutation {
 
       try {
           CtField[] classFields = cl.getSuperclass().getDeclaredFields();
-          System.out.println("Superclass name - "+cl.getSuperclass().getName());
+
           for (CtField field:classFields) {
               int modifiers = field.getModifiers();
-              System.out.println("Variable "+field.getName()+" "+modifiers);
               if ((modifiers & AccessFlag.PROTECTED) == AccessFlag.PROTECTED){
-                  System.out.println("Modifier is protected");
                   field.setModifiers((modifiers & AccessFlag.PRIVATE) | AccessFlag.PRIVATE);
-                  System.out.println(field.getName()+" changed to "+field.getModifiers());
+                  System.out.println(field.getName()+" changed to PRIVATE");
               }
           }
       } catch (NotFoundException e) {
