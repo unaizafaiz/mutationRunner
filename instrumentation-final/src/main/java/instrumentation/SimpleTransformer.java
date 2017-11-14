@@ -51,6 +51,12 @@ public class SimpleTransformer implements ClassFileTransformer {
                 } else if (mutation.equals("InsertHidingVarMutation")) {
                     InsertHidingVarMutation insertMutation = new InsertHidingVarMutation(cl);
                     insertMutation.mutate();
+                } else if (mutation.equals("DeletingOverridingMethodMutation")) {
+                    DeletingOverridingMethodMutation deleteSuper = new DeletingOverridingMethodMutation(cl);
+                    deleteSuper.mutate();
+                } else if (mutation.equals("DeletingOverloadingMethodMutation")) {
+                    DeletingOverloadingMethodMutation deleteOverload = new DeletingOverloadingMethodMutation(cl);
+                    deleteOverload.mutate();
                 }
                 b = cl.toBytecode();
             } catch (Exception e) {

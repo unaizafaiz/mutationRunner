@@ -116,7 +116,6 @@ public class Main {
         command.add("diff");
         command.add(noMutationOutput);
         command.add(mutationOutput);
-
         ProcessBuilder pb = new ProcessBuilder(command);
         File file = new File("Comparing" + "-" + classtoTest + "-" + fileIndex + ".log");
         PrintWriter pw = new PrintWriter(new FileWriter(file));
