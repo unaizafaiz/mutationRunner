@@ -46,7 +46,7 @@ task mainJar(type: Jar) {
 
 
 dependencies {
-    compile files('/Users/manaswikarra/Projects/instrumentation-final/dependencies/javassist.jar','/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/lib/tools.jar')
+    compile files('./dependencies/javassist.jar','/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/lib/tools.jar')
 }
 
 task dist(type: Copy) {

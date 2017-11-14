@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="sudoku.BoxCheckerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-13T18:57:54" hostname="Manaswis-MacBook-Pro.local" time="0.001">
+<testsuite name="sudoku.BoxCheckerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-13T23:38:35" hostname="10-33-212-220.vlan871.client.wireless.uic.edu" time="0.004">
   <properties/>
-  <testcase name="wrongSudokuExpectsSomeTrueInWrongCells" classname="sudoku.BoxCheckerTest" time="0.0"/>
+  <testcase name="wrongSudokuExpectsSomeTrueInWrongCells" classname="sudoku.BoxCheckerTest" time="0.003"/>
   <testcase name="correctSudokuExpectsAllFalseInWrongCells" classname="sudoku.BoxCheckerTest" time="0.001"/>
   <system-out><![CDATA[27		For		i		0		this.startRowbox		0
 29		For		j		0		this.startColumnbox		0
